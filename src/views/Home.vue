@@ -1,18 +1,18 @@
 <template>
   <div>
-    <!-- Hero section -->
-    <section>
+    <!-- Hero -->
+    <section class="p-0">
       <hero />
     </section>
 
-    <!-- Trial Package section -->
-    <section class="sidekick">
+    <!-- Trial Package -->
+    <section>
       <div class="grid-container">
         <trial-package @select="selectOption" />
       </div>
     </section>
 
-    <!-- How It Works section -->
+    <!-- How It Works -->
     <section class="sidekick dark">
       <div class="grid-container">
         <div class="grid-x">
@@ -27,7 +27,7 @@
       </div>
     </section>
 
-    <!-- Package Contents section -->
+    <!-- Package Contents -->
     <section>
       <div class="grid-container">
         <div class="grid-x">
@@ -70,10 +70,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.sidekick {
-  margin: 3.25rem 0;
-}
-
 .footer {
   width: 100%;
   max-height: 254px;
