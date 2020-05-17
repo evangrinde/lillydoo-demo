@@ -10,7 +10,7 @@
       </div>
     </section>
 
-    <section id="how-it-works" class="sidekick dark">
+    <section class="sidekick dark">
       <div class="grid-container">
         <div class="grid-x">
           <div class="cell small-12">
