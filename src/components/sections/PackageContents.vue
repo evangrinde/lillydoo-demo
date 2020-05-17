@@ -26,6 +26,11 @@ export default {
   },
   data() {
     return {
+      /*
+      "packageContents": @array of @objects
+       The property "rules" (if set) determines whether the given object is shown or not.
+       If the prop "selectedOption" is included within "rules" range, then it is shown. Else, it is not shown.
+      */
       packageContents: [
         {
           image: "windel.png",

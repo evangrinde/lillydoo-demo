@@ -2,18 +2,19 @@
   <div>
     <h2>Entdecke unsere Hautfreundlichkeit</h2>
     <h6>Wähle Deine Grösse</h6>
+
     <div class="grid-container">
       <div class="grid-x grid-padding-x">
         <div class="cell medium-auto" v-for="(option, ix) in options" :key="ix">
           <button
             :class="
               `button expanded ${
-                option.number == selectedOption ? 'primary active' : 'secondary'
+                option.id == selectedOption ? 'primary active' : 'secondary'
               }`
             "
-            @click="selectOption(option.number)"
+            @click="selectOption(option.id)"
           >
-            <p>{{ option.number }}</p>
+            <p>{{ option.id }}</p>
             <span>({{ option.weight }} kg)</span>
           </button>
         </div>
@@ -27,25 +28,29 @@ export default {
   name: "ProductSelection",
   data() {
     return {
+      /*
+      "options": @array of @objects
+       Note: The property "id" is propagated to ancestral components to determine product images.
+      */
       options: [
         {
-          number: 1,
+          id: 1,
           weight: "2-3"
         },
         {
-          number: 2,
+          id: 2,
           weight: "3-4"
         },
         {
-          number: 3,
+          id: 3,
           weight: "4-7"
         },
         {
-          number: 4,
+          id: 4,
           weight: "7-10"
         },
         {
-          number: 5,
+          id: 5,
           weight: "10-12"
         }
       ],

@@ -1,15 +1,18 @@
 <template>
   <div>
+    <!-- Hero section -->
     <section>
       <hero />
     </section>
 
+    <!-- Trial Package section -->
     <section class="sidekick">
       <div class="grid-container">
         <trial-package @select="selectOption" />
       </div>
     </section>
 
+    <!-- How It Works section -->
     <section class="sidekick dark">
       <div class="grid-container">
         <div class="grid-x">
@@ -24,6 +27,7 @@
       </div>
     </section>
 
+    <!-- Package Contents section -->
     <section>
       <div class="grid-container">
         <div class="grid-x">
@@ -38,6 +42,7 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <div class="footer"></div>
   </div>
 </template>

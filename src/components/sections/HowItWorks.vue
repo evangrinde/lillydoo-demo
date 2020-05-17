@@ -23,6 +23,10 @@ export default {
   },
   data() {
     return {
+      /*
+      "trialSteps": @array of @objects
+       Note: The property "icon" is passed to child components to determine icon images.
+      */
       trialSteps: [
         {
           icon: "trialbox",
