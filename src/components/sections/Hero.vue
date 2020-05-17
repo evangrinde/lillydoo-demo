@@ -1,6 +1,6 @@
 <template>
   <div id="hero" class="grid-x grid-padding-x">
-    <div class="info-prompt cell small-12 small-auto medium-auto large-4">
+    <div class="info-prompt cell small-12 large-4">
       <h1>Entdecke unsere Hautfreundlichkeit</h1>
       <button type="button" class="button primary">Wähle Deine Grösse</button>
     </div>
