@@ -6,7 +6,7 @@
 
     <section class="sidekick">
       <div class="grid-container">
-        <test-packet />
+        <trial-package @select="selectOption" />
       </div>
     </section>
 
@@ -34,7 +34,7 @@
       </div>
 
       <div class="grid-container">
-        <package-contents />
+        <package-contents :selectedOption="selectedOption" />
       </div>
     </section>
 
@@ -47,9 +47,19 @@ export default {
   name: "Home",
   components: {
     Hero: () => import("@/components/sections/Hero"),
-    TestPacket: () => import("@/components/sections/TestPacket"),
+    TrialPackage: () => import("@/components/sections/TrialPackage"),
     HowItWorks: () => import("@/components/sections/HowItWorks"),
     PackageContents: () => import("@/components/sections/PackageContents")
+  },
+  data() {
+    return {
+      selectedOption: 1
+    };
+  },
+  methods: {
+    selectOption(ix) {
+      this.selectedOption = ix;
+    }
   }
 };
 </script>
