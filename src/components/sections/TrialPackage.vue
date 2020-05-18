@@ -7,7 +7,11 @@
     <div class="cell small-12 large-6">
       <div class="product-wrapper">
         <img class="oeko-tex" src="/images/misc/oekotex.svg" />
-        <img :src="`/images/product-options/testpaket-${selection}.jpg`" />
+        <img
+          id="product-option-img"
+          :src="`/images/product-options/testpaket-${selectedOption}.jpg`"
+          :data-src="`/images/product-options/testpaket-${selectedOption}.jpg`"
+        />
       </div>
     </div>
 
@@ -44,17 +48,17 @@ export default {
   },
   data() {
     return {
-      selection: 1
+      selectedOption: 1
     };
   },
   methods: {
     selectOption(ix) {
-      this.selection = ix;
+      this.selectedOption = ix;
       this.$emit("select", ix);
     }
   },
   mounted() {
-    this.$emit("select", this.selection);
+    this.$emit("select", this.selectedOption);
   }
 };
 </script>
