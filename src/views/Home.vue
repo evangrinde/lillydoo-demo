@@ -58,7 +58,7 @@ export default {
   },
   data() {
     return {
-      selectedOption: 1
+      selectedOption: false
     };
   },
   methods: {

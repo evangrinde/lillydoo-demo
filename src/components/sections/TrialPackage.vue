@@ -52,6 +52,9 @@ export default {
       this.selection = ix;
       this.$emit("select", ix);
     }
+  },
+  mounted() {
+    this.$emit("select", this.selection);
   }
 };
 </script>
