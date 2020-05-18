@@ -12,6 +12,7 @@
                 option.id == selectedOption ? 'primary active' : 'secondary'
               }`
             "
+            :data-id="option.id"
             @click="selectOption(option.id)"
           >
             <p>{{ option.id }}</p>
